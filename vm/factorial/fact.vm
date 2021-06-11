@@ -1,1 +1,23 @@
 function fact 0
+
+    push argument 0 
+    push constant 0
+    eq
+    if-goto ZERO
+
+    label LOOP
+        push argument 0 
+        push constant 1
+        sub
+        call mult 1
+        push argument 0
+        push constant 0
+        eq
+        if-goto END
+
+    label ZERO
+        pop temp 1
+
+    label END
+
+return 
