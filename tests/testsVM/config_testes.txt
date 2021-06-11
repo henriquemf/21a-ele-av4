@@ -2,6 +2,6 @@
 ## Entrega 
 ##--------------------
 
-pseudo.vm 2 10000
-#abs.vm 1 10000
+#pseudo.vm 2 10000
+abs.vm 1 10000
 #factorial.vm 3 10000

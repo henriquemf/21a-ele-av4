@@ -1,1 +1,17 @@
 function abs 0
+
+    push argument 0
+    push constant 0
+    lt 
+    if-goto ABS 
+    push argument 0
+    goto END
+
+    label ABS 
+        push argument 0 
+        neg
+
+    label END 
+        push local 0
+
+return 
