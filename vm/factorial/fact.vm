@@ -1,23 +1,38 @@
-function fact 0
+function fact 1
+
+    push argument 0 
+    pop local 0
 
     push argument 0 
     push constant 0
     eq
     if-goto ZERO
 
-    label LOOP
+    label HIGHER
+
         push argument 0 
         push constant 1
         sub
-        call mult 1
+        pop argument 0
+
         push argument 0
         push constant 0
         eq
         if-goto END
 
+        push argument 0
+        push local 0
+
+        call mult 2
+        pop local 0
+
+        goto HIGHER 
+
     label ZERO
-        pop temp 1
+
+        push constant 1 
+        pop local 0
 
     label END
-
+    
 return 
