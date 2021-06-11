@@ -45,6 +45,12 @@ public class Code {
 
         if (command.equals("delete")) {
  //           commands.add("   ");
+            commands.add("leaw $SP, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %D");
+            commands.add("leaw $SP, %A");
+            commands.add("movw %D, (%A)");
         }
 
         if ( command.equals("addi")) {
